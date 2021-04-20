@@ -1,15 +1,13 @@
-Helm repository
+## Helm repository
 
-[[_TOC_]]
-
-## Install repository:
+### Install repository:
 
 > helm repo add stainless888 https://stainless888.github.io/helm-charts/
 
-## Update afterwards:
+### Update afterwards:
 
 > helm repo update
 
-## List available charts:
+### List available charts:
 
 > helm search repo stainless888
