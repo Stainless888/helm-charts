@@ -4,7 +4,7 @@
 
 > helm repo add stainless888 https://stainless888.github.io/helm-charts/
 
-### Update afterwards:
+### Update it afterwards:
 
 > helm repo update
 
