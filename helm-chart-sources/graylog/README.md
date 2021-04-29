@@ -28,7 +28,7 @@ helm install "mongodb" -n "graylog" bitnami/mongodb
 To install Elasticsearch, run
 
 ```bash
-elm repo add elastic https://helm.elastic.co
+helm repo add elastic https://helm.elastic.co
 helm repo update
 helm install elasticsearch  --version <version> elastic/elasticsearch -n "graylog"
 ```
@@ -42,7 +42,7 @@ helm install --namespace "graylog" -n "graylog" stainless888/graylog \
   --set tags.install-mongodb=false\
   --set tags.install-elasticsearch=false\
   --set graylog.mongodb.uri=mongodb://your path to mongodb service/graylog?replicaSet=rs0 \
-  --set graylog.elasticsearch.hosts=http://your path to elasticsearch cluster:9200
+  --set graylog.elasticsearch.hosts=http|s://your path to elasticsearch cluster:9200
 ```
 
 After installation succeeds, you can get a status of Chart
